@@ -1,0 +1,42 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+
+$font: 'Lato', sans-serif;
+$color: #3e3e3e;
+$bgColor: #eee;
+$grey: #495057;
+$green: #37af65;
+$break-small: 425px;
+$break-tablet: 768px;
+$break-medium: 1024px;
+$break-large: 1210px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: $color;
+	background-color: $bgColor;
+	font-family: $font;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: $break-tablet) {
+		max-width: 90%;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	@media (min-width: $break-large) {
+		max-width: 1200px;
+	}
+}
